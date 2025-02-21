@@ -1,0 +1,124 @@
+body {
+  background-color: #f4f1e9; /* Light parchment */
+  font-family: 'Cinzel', serif;
+  color: #3e2c1e;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #faf4e6;
+  border: 2px solid #8b5e3c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #5c4033;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form_container, .payment__form, .token-generation__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #4b3621;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #8b5e3c;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #c49f70;
+  box-shadow: 0 0 5px rgba(196, 159, 112, 0.5);
+}
+
+.field-invalid .form-input {
+  border-color: #d9534f;
+  background-color: #fcebea;
+}
+
+.expiration-fields {
+  display: flex;
+  align-items: center;
+}
+
+.expiration-separator {
+  margin: 0 5px;
+  font-size: 1.2rem;
+  color: #5c4033;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.form-button {
+  padding: 12px 20px;
+  background: linear-gradient(145deg, #b87333, #a15e2c);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.form-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.form-button:not(:disabled):hover {
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: #d9534f;
+  background: #fcebea;
+  padding: 10px;
+  border: 1px solid #d9534f;
+  border-radius: 5px;
+}
+
+.token-generation__errors {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
